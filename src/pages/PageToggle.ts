@@ -1,7 +1,10 @@
+import { Toggle001 } from "../components/Toggle001";
+import { Wrapper } from "../components/Wrapper";
+
 export const PageToggle = () => {
 	return /*html*/`
 <div>
-	<p>This is the toggle page.</p>
+${Wrapper('First toggle', Toggle001())}
 </div>
 `;
 }
