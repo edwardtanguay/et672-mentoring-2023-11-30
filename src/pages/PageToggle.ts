@@ -4,7 +4,7 @@ import { Wrapper } from "../components/Wrapper";
 export const PageToggle = () => {
 	return /*html*/`
 <div>
-${Wrapper('First toggle', Toggle001())}
+	${Wrapper('First toggle', Toggle001({round: true}) + Toggle001({round: false}))}
 </div>
 `;
 }
