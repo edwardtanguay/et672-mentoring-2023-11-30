@@ -30,5 +30,6 @@ export const cleanCharactersToAscii = (text: string) => {
 	text = tools.replaceAll(text, 'ä', 'oe');
 	text = tools.replaceAll(text, 'ß', 'ss');
 	text = tools.replaceAll(text, ' ', '');
+	text = tools.replaceAll(text, '/', '');
 	return text;
 }
