@@ -1,17 +1,17 @@
 import * as tools from './tools';
-import { PageWelcome } from './pages/PageWelcome';
 import { PageInfo } from './pages/PageInfo';
 import { PageAbout } from './pages/PageAbout';
 import { Page404 } from './pages/Page404';
+import { PageConversion } from './pages/PageConversion';
 
-const pageNames = ['Welcome', 'Info', 'About'];
+const pageNames = ['Conversion', 'Info', 'About'];
 
 const currentPageIdCode = getSmartCurrentPageId();
 
 export const getCurrentPage = () => {
 	switch (currentPageIdCode) {
-		case 'welcome':
-			return PageWelcome();
+		case 'conversion':
+			return PageConversion();
 		case 'info':
 			return PageInfo();
 		case 'about':
@@ -37,8 +37,8 @@ export const getMenu = () => {
 	}
 
 	return /*html*/`
-	<nav class="menu">
-		<ul>
+	<nav>
+		<ul class="flex gap-3 mb-4 bg-slate-400 p-2">
 			${pageNames.map(pageName => `<li><a href="${getPageIdCode(pageName)}"${getMenuClass(pageName)}>${pageName}</a></li>`).join('')}
 		</ul>
 	</nav>
