@@ -1,6 +1,6 @@
 export const Wrapper = (title: string, html: string) => {
 	return /*html*/ `
-	<fieldset class="border w-fit border-slate-400 rounded py-4 px-6">
+	<fieldset class="border min-w-fit border-slate-400 rounded py-4 px-6">
 		<legend class="smallcaps text-slate-700">${title}</legend>		
 		${html}
 	</fieldset>

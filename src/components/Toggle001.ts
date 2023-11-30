@@ -1,5 +1,10 @@
 export const Toggle001 = () => {
 	return /*html*/ `
-	this is the toggle	
-	`
-}
+	<div class="toggleSwitch">
+		<label class="switch">
+			<input type="checkbox">
+			<span class="slider"></span>
+		</label>
+	</div>
+	`;
+};
