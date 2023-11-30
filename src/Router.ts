@@ -3,8 +3,9 @@ import { Page404 } from './pages/Page404';
 import { PageConversion } from './pages/PageConversion';
 import { PageSsltls } from './pages/PageSsltls';
 import { PageToggle } from './pages/PageToggle';
+import { PageTransition } from './pages/PageTransition';
 
-const pageNames = ['Conversion', 'SSL/TLS', 'Toggle-Switch'];
+const pageNames = ['Conversion', 'SSL/TLS', 'Toggle-Switch', 'Transition'];
 
 const currentPageIdCode = getSmartCurrentPageId();
 
@@ -16,6 +17,8 @@ export const getCurrentPage = () => {
 			return PageSsltls();
 		case 'toggle-switch':
 			return PageToggle();
+		case 'transition':
+			return PageTransition();
 		default:
 			return Page404();
 	}
