@@ -18,7 +18,7 @@ export const PageConversion = () => {
 	<p>001. total = ${addPrices(1, 2)}</p>
 	<p>002. total = ${addPrices("1", 2)}</p>
 	<p>003. total = ${addPrices(1, undefined)}</p>
-	<p>004. total = ${getSafeTotal(1, undefined)}</p>
+	<p>004. total = ${getSafeTotal(1, NaN)}</p>
 	<p>005. total = ${getSafeTotal(5, true)}</p>
 	<p class="mt-3">explore more examples at <a href="https://www.w3schools.com/js/js_type_conversion.asp">w3schools</p>
 </div>

@@ -1,11 +1,25 @@
+import { getPrice } from "../apiModule";
+import { addTax } from "../taxModule";
+
 export const PageSsltls = () => {
+
+	// const total = getPrice();
+	// const total = parseFloat(getPrice());
+	const total = Number(getPrice());
+
+	let output = '';
+	if (typeof total === 'number' && !isNaN(total)) {
+		output = `<p>total (${total}) price = ${addTax(total)} €</p>`;
+	} else {
+		output = 'Sorry, not possible to purchase at the moment.';
+	}
+
 	return /*html*/`
 <div>
-<ul class="list-disc ml-4">
-	<li>my techItems notes: <a href="https://onespace.pages.dev/techItems?id=280">TLS</a></li>
-	<li><a href="https://en.wikipedia.org/wiki/Transport_Layer_Security">wiki</a></li>
-	<li><a href="https://tanguay-eu.vercel.app/howtos/663">HOWTO: Deploy a frontend React site to a subdomain on a Hetzner Debian machine with Nginx/pm2/certbot</li>
-</ul>
+	<p>total price = ${addTax(1)} €</p>
+	${output}
+	<p>total price = ${addTax(3)} €</p>
+	<p>total price = ${addTax(200.99)} €</p>
 </div>
 `; 
 }
