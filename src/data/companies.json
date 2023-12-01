@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "name": "Apple",
+    "headquarters": "Cupertino, California, USA",
+    "foundingYear": 1976,
+    "description": "Designs and manufactures consumer electronics, computer software, and online services."
+  },
+  {
+    "id": 2,
+    "name": "Microsoft",
+    "headquarters": "Redmond, Washington, USA",
+    "foundingYear": 1975,
+    "description": "Develops, licenses, and sells computer software, consumer electronics, and personal computers."
+  },
+  {
+    "id": 3,
+    "name": "Amazon",
+    "headquarters": "Seattle, Washington, USA",
+    "foundingYear": 1994,
+    "description": "Multinational technology and e-commerce company focusing on cloud computing, digital streaming, and artificial intelligence."
+  },
+  {
+    "id": 4,
+    "name": "Google",
+    "headquarters": "Mountain View, California, USA",
+    "foundingYear": 1998,
+    "description": "Specializes in Internet-related services and products, including online advertising technologies, a search engine, cloud computing, and software."
+  },
+  {
+    "id": 5,
+    "name": "Facebook",
+    "headquarters": "Menlo Park, California, USA",
+    "foundingYear": 2004,
+    "description": "Social media and technology company offering social networking services."
+  },
+  {
+    "id": 6,
+    "name": "Tesla",
+    "headquarters": "Palo Alto, California, USA",
+    "foundingYear": 2003,
+    "description": "Electric vehicle and clean energy company known for its electric cars, energy storage, and solar products."
+  },
+  {
+    "id": 7,
+    "name": "IBM",
+    "headquarters": "Armonk, New York, USA",
+    "foundingYear": 1911,
+    "description": "Multinational technology and consulting company offering hardware, software, and hosting services."
+  }
+]
