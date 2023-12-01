@@ -35,7 +35,7 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
-		background-color:darkred;
+		background-color: darkred;
 		margin-left: -3px;
 	}
 
@@ -66,5 +66,30 @@
 
 	.slider.round:before {
 		border-radius: 50%;
+	}
+}
+
+.componentTransition {
+	label {
+		&:after {
+			content: ': ';
+		}
+	}
+	input {
+		outline: 1px solid transparent;
+		transition: background-color .5s, transform 2s, outline .5s, border-radius 2s;
+
+		&:hover {
+			background-color: #ccc;
+			outline: 1px solid red;
+			transform: translate(5px, 0);
+		}
+
+		&:focus {
+			background-color: yellow;
+			outline: 1px solid #333;
+			border-radius: .5rem;
+			padding: .3rem;
+		}
 	}
 }

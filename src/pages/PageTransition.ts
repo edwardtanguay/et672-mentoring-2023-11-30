@@ -1,7 +1,8 @@
+import { TransitionInputs } from "../components/TransitionInputs";
+import { Wrapper } from "../components/Wrapper";
+
 export const PageTransition = () => {
 	return /*html*/`
-<div>
-	<p>transition</p>
-</div>
+	${Wrapper("Input field animation", TransitionInputs())}
 `; 
 }
