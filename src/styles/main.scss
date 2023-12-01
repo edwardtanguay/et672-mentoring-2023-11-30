@@ -75,6 +75,7 @@
 			content: ': ';
 		}
 	}
+
 	input {
 		outline: 1px solid transparent;
 		transition: background-color .5s, transform 2s, outline .5s, border-radius 2s;
@@ -91,5 +92,38 @@
 			border-radius: .5rem;
 			padding: .3rem;
 		}
+	}
+}
+
+
+.componentTables {
+	.tech-table {
+		width: 100%;
+		border-collapse: collapse;
+		margin-top: 20px;
+	}
+
+	/* Styling for table header */
+	.tech-table thead {
+		background-color: #f2f2f2;
+	}
+
+	.tech-table th,
+	.tech-table td {
+		padding: 10px;
+		border: 1px solid #ddd;
+		text-align: left;
+	}
+
+	/* Styling for table footer */
+	.tech-table tfoot {
+		font-weight: bold;
+		background-color: #f2f2f2;
+	}
+
+	/* Hover effect for table rows */
+	.tech-table tbody tr:hover {
+		background-color:beige;
+		cursor: pointer;
 	}
 }
